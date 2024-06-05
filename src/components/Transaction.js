@@ -59,7 +59,7 @@ const Transaction = () => {
       })
       .then((data) => {
         console.log(data);
-        localStorage.setItem('key', data.Key);
+        localStorage.setItem('payfabric_key', data.Key);
         setKey(data.Key);
       });
   }, []);
