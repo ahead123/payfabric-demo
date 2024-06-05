@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
@@ -9,7 +10,7 @@ const NavBar = () => {
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="/">
-          <img
+          <Image
             src={source}
             width="30"
             height="30"
@@ -25,7 +26,7 @@ const NavBar = () => {
             <Nav.Link href="/transaction/create">
               Transaction
             </Nav.Link>
-            <Nav.Link href="/transaction/process">Payment</Nav.Link>
+            <Nav.Link href="/payment/create">Payment</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

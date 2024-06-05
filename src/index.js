@@ -11,6 +11,7 @@ import Layout from './components/Layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SecurityToken from './components/SecurityToken';
 import Transaction from './components/Transaction';
+import Payment from './components/Payment';
 
 const domNode = document.getElementById('root');
 const root = createRoot(domNode);
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: '/transaction/create',
     element: <Transaction />,
+  },
+  {
+    path: '/payment/create',
+    element: <Payment />,
   },
 ]);
 root.render(

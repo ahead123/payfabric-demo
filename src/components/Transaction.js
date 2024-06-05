@@ -129,7 +129,7 @@ const Transaction = () => {
           <Link to="/token/create">Back</Link>
         </Col>
         <Col className="text-center">
-          <Link to="/payment-sheet/create">Next</Link>
+          <Link to="/payment/create">Next</Link>
         </Col>
       </Row>
     </>
